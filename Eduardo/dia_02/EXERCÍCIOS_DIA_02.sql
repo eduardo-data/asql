@@ -128,3 +128,27 @@ END as condicao
 FROM silver.olist.item_pedido
 
 
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC **DESAFIO**
+-- MAGIC
+-- MAGIC Selecione a tabela silver.olist.produto :
+-- MAGIC ○ Crie uma coluna nova chamada ‘descNovaCategoria’ seguindo:
+-- MAGIC i. agrupe ‘alimentos’ e ‘alimentos_bebidas’ em ‘alimentos’
+-- MAGIC ii. agrupe ‘artes’ e ‘artes_e_artesanato’ em ‘artes’
+-- MAGIC iii. agrupe todas categorias de construção em uma única categoria
+-- MAGIC chamada ‘construção’
+-- MAGIC ○ Cria uma coluna nova chamada ‘descPeso’
+-- MAGIC i. para peso menor que 2kg: ‘leve’
+-- MAGIC ii. para peso entre 2kg e 5kg: ‘médio’
+-- MAGIC iii. para peso entre 5kg e 10kg: ‘pesado’
+-- MAGIC iv. para peso maior que 10kg: ‘muito pesado’
+
+-- COMMAND ----------
+
+SELECT *
+    --CASE WHEN des
+
+FROM silver.olist.produto
